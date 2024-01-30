@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .cont{
+            height: 100%;
+            width: 100%;
+            min-height: 800px;
+            background-color: #88C6EC;
+            background-image: linear-gradient(135deg, #88C6EC 0%, #9599E2 100%);
+
+             display: flex;
+             justify-content: center; 
+             align-items: center;
+             
+        }
+        .box{
+            width: 360px;
+            height: 380px;
+            text-align: center;
+            background-color: white;
+            border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+        img{
+            padding-top: 7%;
+            height: 60%;
+            width: 80%;
+            border-radius: 10px;
+            transition: all 300ms;
+        }
+        img:hover{
+            transform: scale(1.1, 1.1);
+        }
+        .box p{
+            font-style: italic;
+            font-weight: bold;
+        }
+        .box h2{
+            font-size: 1.3rem;
+            font-weight: 800;
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+
+        <div class="box">
+            <img src="city.png" alt="">
+            <h2>Improve your CSS skills and knowledge</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nobis aperiam quas ipsa perspiciatis deleniti laudantium amet vitae repellat voluptatibus!</p>
+        </div>
+
+    </div>
+</body>
+</html>

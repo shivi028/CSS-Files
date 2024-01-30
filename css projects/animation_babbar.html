@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .cont{
+            height: 100vh;
+            width: 100vw;
+            border: 3px solid rgb(255, 250, 250);
+            background-color: cornflowerblue;
+        }
+
+        #b1{
+            width: 200px;
+            height: 50px;
+            border: 2px solid red;
+            border-radius: 10px;
+            background-color: bisque;
+            margin: 5px;
+            padding: 3px;
+            position: relative;
+            /* shorthand property */
+            /* duration || easing function || delay || iteration count || direction || fill-mode || play-state || name */
+            animation: 5s linear 1s infinite alternate none running box1;
+        }
+
+        @keyframes box1{
+            from{
+                top: 5px;
+                left: 0;
+            }
+            to{
+                top: 5px;
+                left: 85%;
+            }
+        }
+
+        #b2{
+            width: 200px;
+            height: 50px;
+            border: 2px solid red;
+            border-radius: 10px;
+            background-color: bisque;
+            margin: 5px;
+            padding: 3px;
+            position: relative;
+            /* shorthand property */
+            /* duration || easing function || delay || iteration count || direction || fill-mode || play-state || name */
+            animation: 7s linear 1s infinite alternate none running box2;
+        }
+
+        @keyframes box2{
+            from{
+                top: 65%;
+                left: 85%;
+            }
+            to{
+                top: 65%;
+                left: 0;
+            }
+        }
+
+        #circle{
+            height: 100px;
+            width: 100px;
+            border-radius: 60px;
+            background-color: bisque;
+            border: 2px solid red;
+            position: relative;
+            animation: 5s ease-in-out 1s infinite alternate none running circle;
+            top: 200px;
+            left: 600px;
+
+        }
+
+        @keyframes circle{
+            0%{
+                top: 1%;
+                left: 5%;
+            } 
+
+            25%{
+                top: 5%;
+                left: 80%;
+            }
+
+            65%{
+                top: 60%;
+                left: 7%;
+            }
+
+            100%{
+                top: 50%;
+                left: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cont">
+        <div id="b1">
+
+        </div>
+
+        <div id="circle">
+
+        </div>
+
+        <div id="b2">
+
+        </div>
+    </div>
+
+</body>
+</html>
