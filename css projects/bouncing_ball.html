@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cont{
+            height: 700px;
+            width: 1200px;
+            background-color: rgb(181, 177, 177);
+            margin-top: 2rem;
+            position: relative;
+            border-radius: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) ;
+        }
+        .ball{
+            height: 110px;
+            width: 110px;
+            background-color: red;
+            border-radius: 7rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5) inset;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+             animation: aniX 3s linear infinite,  aniY 1s ease-out infinite alternate;
+            
+           
+        }
+        @keyframes aniX{
+            from{
+                left: 0;
+            }
+            to{
+                left: 90%;
+            }
+        }
+
+        @keyframes aniY{
+            from{
+               bottom  : 0;
+            }
+            to{
+                bottom : 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>
